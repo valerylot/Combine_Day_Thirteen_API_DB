@@ -14,5 +14,8 @@ namespace Combine_Day_Thirteen_API_DB.Services
 
         Student AddStudent(Student newStudent); //parameters are just placeholders for incoming information
 
+        Student Replace (int id, Student student);
+
+        Student Patch (int id, Student changes);
     }
 }

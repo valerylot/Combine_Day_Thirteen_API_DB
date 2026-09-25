@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Combine_Day_Thirteetn_API_DB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37ccbcdc3e6950f31ff130525ffebae50a2e932d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c186dfcfcd5bd3dd4c4d3bfc4450b8d7ded1254")]
 [assembly: System.Reflection.AssemblyProductAttribute("Combine_Day_Thirteetn_API_DB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Combine_Day_Thirteetn_API_DB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

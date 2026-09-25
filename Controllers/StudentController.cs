@@ -38,5 +38,32 @@ namespace Combine_Day_Thirteen_API_DB.Controllers
                 createdStudent
             );
         }
+
+        [HttpPut("update/{id}")]
+        public ActionResult<Student> Replace(int id, [FromBody] Student student)
+        {
+            //possible null return we add the null ? operator
+            Student? updated = _student.Replace(id, student);
+
+            //if the inputted id is not in the database we return not found
+            if(updated is null)
+            {
+                return NotFound($"No student with ID {id}");
+            }
+            return NoContent();
+        }
+
+        //sends only the fields you want to change, everything else stays the same
+        [HttpPatch("patch/{id}")]
+        public ActionResult<Student> Patch(int id, [FromBody] Student changes)
+        {
+            Student? change = _student.Patch(id, changes);
+
+            if(change == null)
+            {
+                return NotFound($"No student with ID {id}");
+            }
+            return NoContent();
+        }
     }
 }

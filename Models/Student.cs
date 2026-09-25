@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Combine_Day_Thirteen_API_DB.Models
 {
-    public class Student
+    public class Student : BaseEntity
     {
-        public int Id {get; set;}
+        // public int Id {get; set;} // no longer need because inheriting base entity
 
         public string FirstName {get; set;}
 
